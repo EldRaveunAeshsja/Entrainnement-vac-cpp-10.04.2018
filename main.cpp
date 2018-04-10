@@ -1,6 +1,14 @@
 #include <iostream>
+using namespace std;
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+int main()
+{
+    int chiffre(26);
+    int& monChiffreEnRef(chiffre);
+
+    cout << chiffre << endl;
+
+    cout << monChiffreEnRef << endl;
+
+   return 0;
 }
