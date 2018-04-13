@@ -3,15 +3,14 @@ using namespace std;
 
 int main()
 {
-    int a(0), b(0), resultat(0);
+    string const motDePasse("bonjour je suis débile"); //Le mot de passe secret
+    double const pi(3.14);
+    unsigned int const pointsDeVieMaximum(100); //Le nombre maximal de points de vie
+    float const bonjour(3.16516854);
 
-    cout << "saisissez deux nombres entier :" << endl;
-    cin >> a;
-    cin >> b;
-
-    resultat = a + b;
-    cout << "Le calcul : " << a << " + " << b << " = " << resultat << endl;
-
-
+    cout << motDePasse << endl;
+    cout << pi << endl;
+    cout << pointsDeVieMaximum << endl;
+    cout << bonjour << endl;
     return 0;
 }
