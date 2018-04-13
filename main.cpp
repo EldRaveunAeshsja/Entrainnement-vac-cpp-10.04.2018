@@ -4,24 +4,19 @@ using namespace std;
 
 int main()
 {
-    double a(0), b(0); //Déclaration des variables utiles
+    double a(0), b(0);
 
-    cout << "Bienvenue dans le programme de calcul de a^b !" << endl;
+    cout << "Bonjour. Bienvenu dans ce programme permettant de calculer la puissance d'un nombre." << endl;
 
-    cout << "Donnez une valeur pour a : "; //On demande le premier nombre
+    cout << "Saisissez votre nombre : " << endl;
     cin >> a;
 
-    cout << "Donnez une valeur pour b : "; //On demande le deuxième nombre
+    cout << "saisissez sa puissance" << endl;
     cin >> b;
 
     double const resultat(pow(a, b)); //On effectue l'opération
-    //On peut aussi écrire comme avant :
-    //double const resultat = pow(a,b);
-    //Souvenez-vous des deux formes possibles
-    //De l'initialisation d'une variable
 
-    cout << a << " ^ " << b << " = " << resultat << endl;
-    //On affiche le résultat
+    cout << a << " puissance de " << b << " = " << resultat << endl;
 
     return 0;
 }
