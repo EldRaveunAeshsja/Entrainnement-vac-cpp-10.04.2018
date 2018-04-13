@@ -1,20 +1,17 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main()
 {
-    cout << "Combien vaut pi ?" << endl;
-    double piUtilisateur(-1.); //On crée une case mémoire pour stocker unnombre réel
-    cin >> piUtilisateur; //Et on remplit cette case avec ce qu'écritl'utilisateur
+    int a(0), b(0), resultat(0);
 
-    cin.ignore();
+    cout << "saisissez deux nombres entier :" << endl;
+    cin >> a;
+    cin >> b;
 
-    cout << "Quel est votre nom ?" << endl;
-    string nomUtilisateur("Sans nom"); //On crée une case mémoire pour contenir une chaine de caractères
-    getline(cin, nomUtilisateur); //On remplit cette case avec toute la ligne que l'utilisateur a écrit
+    resultat = a + b;
+    cout << "Le calcul : " << a << " + " << b << " = " << resultat << endl;
 
-    cout << "Vous vous appelez " << nomUtilisateur << " et vous pensez que pi vaut " << piUtilisateur << "." << endl;
 
     return 0;
 }
